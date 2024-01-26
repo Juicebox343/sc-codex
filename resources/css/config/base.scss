@@ -1,0 +1,65 @@
+html{
+    // position: relative;
+	// background: repeating-linear-gradient(
+    //     to top,
+    //     rgba(0, 41, 0, 0.15),
+    //     rgba(0, 41, 0, 0.15), 2px,
+    //     rgba(6, 58, 8, 0.15) 2px,
+    //     rgba(6, 58, 11, 0.15) 4px
+	// 		),repeating-linear-gradient(
+	// 			to top,
+	// 			rgba(0, 41, 0, 0.15),
+	// 			rgba(0, 41, 0, 0.15), 2px,
+	// 			rgba(6, 58, 8, 0.15) 2px,
+	// 			rgba(6, 58, 11, 0.15) 4px
+    //         );
+	// background-color: #004606;
+    // &:after{
+    //     content: '';
+    //     width: 100vw;
+    //     height: 150px;
+    //     animation-name: artifact-animation;
+    //     opacity: 0;
+    //     background-image: radial-gradient(rgba(176,234,255,0.2), rgba(0,0,0,0) 80%);
+    //     animation-duration: 7s;
+    //     position: absolute;
+    //     bottom: 0;
+    //     animation-iteration-count: infinite;
+    //     animation-timing-function: linear;
+    // }
+    // @keyframes artifact-animation {
+    //     from {bottom: 0; opacity: .1;}
+    //     to {bottom: 10; opacity: .2;}
+    //   }
+}
+
+body{
+    background-color: #1a2f1b;
+    font-family: 'Nunito', sans-serif;
+    *{
+        box-sizing: border-box;
+    }
+    & > * {
+        max-width: 850px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span{
+    color: rgb(0, 165, 0);
+}
+
+main, nav{
+    margin: auto;
+    padding: 1rem 20px;
+}
+
+
+

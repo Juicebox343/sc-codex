@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Star Citizen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">  
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/app.js"></script>
+    </head>
+
+    <body>
+        {{ include('partials/navigation.twig') }}
+        <main class="page-home">
+            <section class='section-favorites'>
+                <h2>Favorites</h2>
+                <ul>
+                    <li class='card-favorite'><a href="#"><h3>My First Favorite</h3><img src='/images/msr.jpg'></a></li>
+                    <li class='card-favorite'><a href="#"><h3>My Second Favorite</h3></a></li>
+                    <li class='card-favorite'><a href="#"><h3>My First Favorite</h3><img src='/images/msr.jpg'></a></li>
+                    <li class='card-favorite'><a href="#"><h3>My First Favorite</h3><img src='/images/msr.jpg'></a></li>
+
+                </ul>
+                <button hx-get="/modal" hx-target="body" hx-swap="beforeend">Open a Modal</button>
+
+                <div id="modal">
+                    <div class="modal-underlay" ></div>
+                    <div class="modal-content">
+                        <h1>Modal Dialog</h1>
+                        This is the modal content.
+                        You can put anything here, like text, or a form, or an image.
+                        <br>
+                        <br>
+                        <button>Close</button>
+                    </div>
+                </div>
+            </section>
+    
+            <section class='section-collection'>
+                <h2>Collections</h2>
+                <ul>
+                    <li class='card-collection'><a href="#"><h3>Vehicles</h3><img src='/images/msr.jpg'></a></li>
+                    <li class='card-collection'><a href="#"><h3>Vehicles</h3><img src='/images/msr.jpg'></a></li>
+                    <li class='card-collection'><a href="#"><h3>Vehicles</h3><img src='/images/msr.jpg'></a></li>
+                </ul>
+    
+            </section>
+        </main> 
+    </body>
+
+    
+
+    </html>
