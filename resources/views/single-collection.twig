@@ -12,31 +12,18 @@
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/app.js"></script>
     </head>
 
     <body>
         {{ include('partials/navigation.twig') }}
         <main class="page-home">
-            <section class='section-favorites'>
-                <h2>Favorites</h2>
-                <ul>              
-                    {% for item in favorites %}
-                        {{ include('partials/card-favorite.twig') }}
-                    {% endfor %}   
-                </ul>
-            </section>
-    
-            <section class='section-collection'>
-                <h2>Collections</h2>
-                <ul>
-                    {% for item in collections %}
-                        {{ include('partials/card-collection.twig') }}
-                    {% endfor %}   
-                </ul>
-    
-            </section>
+            {{ collection_info.name }}
+            <input placeholder="Search"/>
+            {% for item in collection_content %}
+                {{ include('partials/card-collection-item.twig') }}
+            {% endfor %}   
         </main> 
     </body>
 

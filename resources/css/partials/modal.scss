@@ -1,0 +1,94 @@
+.modal{
+    &__underlay{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #002708db;
+        z-index: 5;
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #073c07;
+        padding: 2rem;
+        width: clamp(350px, 850px, 850px);
+        z-index: 10;
+        height: 50vh;
+        h3{
+            margin-top: 0;
+        }
+    }
+
+    .button{
+        font-family: 'Quantico', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        &__exit{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 85px;
+            background-color: #ff00006b;
+            color: #ffffff8f;
+            overflow: hidden;
+            border: none;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-bottom-right-radius: 2px;
+            svg{
+                opacity: .2;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+            span{
+                color: #ffffff3b;
+                font-family: 'Quantico', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+                text-transform: uppercase;
+                line-height: 100%;
+            }
+            &:hover{
+                background-color: #ff00008a;
+            }
+        }
+
+        &__more{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 85px;
+            background-color: rgb(0, 78, 0);
+            color: #ffffff8f;
+            overflow: hidden;
+            border: none;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-bottom-right-radius: 2px;
+            svg{
+                opacity: .2;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+            span{
+                color: #ffffff3b;
+                font-family: 'Quantico', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+                text-transform: uppercase;
+                line-height: 100%;
+            }
+            &:hover{
+                background-color: rgba(1, 187, 1, 0.52);
+            }
+        }
+    }
+}

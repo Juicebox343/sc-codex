@@ -1,0 +1,16 @@
+[
+    {
+      "name": "Mercury Star Runner",
+      "description": "The Mercury checks all the boxes expected of a dependable courier vessel, and then some. If you need it there fast and unscathed, you can’t do better than the Mercury. Built with the same engineering and design principals that has made Crusader the go-to manufacturer for galactic transport on any scale, the Star Runner chassis sets new standards for data and cargo conveyance.",
+      "universe-price": 4912500,
+      "real-price": 260,
+      "cargo-grid": 114,
+      "internal-storage": 114000,
+      "crew": [1, 2, 3, 4],
+      "size": "large",
+      "scm-speed": 215,
+      "max-speed": 1287,
+      "hull-health": 37400
+    }
+  ]
+  

@@ -137,6 +137,97 @@ main, nav {
   background-color: rgba(0, 185, 0, 0.2039215686);
 }
 
+.modal__underlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 39, 8, 0.8588235294);
+  z-index: 5;
+}
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #073c07;
+  padding: 2rem;
+  width: 850px;
+  z-index: 10;
+  height: 50vh;
+}
+.modal__content h3 {
+  margin-top: 0;
+}
+.modal .button {
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.modal .button__exit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 85px;
+  background-color: rgba(255, 0, 0, 0.4196078431);
+  color: rgba(255, 255, 255, 0.5607843137);
+  overflow: hidden;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom-right-radius: 2px;
+}
+.modal .button__exit svg {
+  opacity: 0.2;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.modal .button__exit span {
+  color: rgba(255, 255, 255, 0.231372549);
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+.modal .button__exit:hover {
+  background-color: rgba(255, 0, 0, 0.5411764706);
+}
+.modal .button__more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 85px;
+  background-color: rgb(0, 78, 0);
+  color: rgba(255, 255, 255, 0.5607843137);
+  overflow: hidden;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom-right-radius: 2px;
+}
+.modal .button__more svg {
+  opacity: 0.2;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.modal .button__more span {
+  color: rgba(255, 255, 255, 0.231372549);
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+.modal .button__more:hover {
+  background-color: rgba(1, 187, 1, 0.52);
+}
+
 .section-favorites ul {
   row-gap: 1rem;
   list-style: none;
