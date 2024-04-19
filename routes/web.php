@@ -20,6 +20,7 @@ use App\Http\Controllers\CollectionController;
 
 
 Route::get('/', CollectionController::class .'@index')->name('collections.index');
+Route::get('/collections/{collection_name}', CollectionController::class .'@show')->name('collections.show');
 
 Route::get('/modal', function () {
     return view('/modal');
@@ -32,6 +33,9 @@ Route::get('/modal', function () {
 // Route::get('/collection/{collection_name}', function () {
 //     return view('single-collection', ['collection_name']);
 // });
+
+
+
 
 Route::resource('vehicles', VehicleController::class);
 Route::resource('collections', CollectionController::class);

@@ -12,19 +12,19 @@ use Illuminate\Support\Facades\DB;
 
 class CollectionController extends Controller
 {
+
+
+
     public function index()
     {
         $collections = Collection::all();
         return view('base', compact('collections'));
     }
 
-    public function show()
+    public function show($slug)
     {
-        $collection_info = Collection::all();
-        $collection_content = DB::table('collections')
-                ->rightJoin('vehicles', 'collections.id', '=', 'vehicles.collections_id')
-                ->get();
+          $collection = Collection::find($slug);
+          return view('single-collection', compact('collection'));
 
-        return view('single-collection', compact(['collection_info'], ['collection_content']));
     }
 }

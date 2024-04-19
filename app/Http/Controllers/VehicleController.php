@@ -17,4 +17,17 @@ class VehicleController extends Controller
    
         return view('partials.card-favorite', compact('vehicles'));
     }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+        'title' => 'required|max:255',
+        'body' => 'required',
+        ]);
+        Post::create($request->all());
+        return redirect()->route('posts.index')
+        ->with('success', 'Post created successfully.');
+    }
+
+    
 }

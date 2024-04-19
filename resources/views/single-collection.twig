@@ -19,12 +19,10 @@
     <body>
         {{ include('partials/navigation.twig') }}
         <main class="page-home">
-            {{ collection_info.name }}
+            {{ collection.name }}
             <input placeholder="Search"/>
-            {% for item in collection_content %}
-                {{ include('partials/card-collection-item.twig') }}
-            {% endfor %}   
-        </main> 
+{{dump(collection)}}
+
     </body>
 
     

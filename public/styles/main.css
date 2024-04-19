@@ -44,7 +44,7 @@ main, nav {
 }
 .card-collection h3 {
   transition: opacity 0.2s linear;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 180%;
   margin: 0;
   z-index: 2;
@@ -100,7 +100,7 @@ main, nav {
 }
 .card-favorite h3 {
   transition: opacity 0.2s linear;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 180%;
   margin: 0;
   z-index: 2;
